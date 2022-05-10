@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>M & D Cleaning</title>
+	<link rel="stylesheet" href="../styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="page-top">
+		<div class = "main-header">
+			<div id="left-header">
+				<h2  id="clickable-title" onclick="document.location='../index.html'">M & D Cleaning</h1>
+				<div id="sub-left-header">
+					<h4 id="clickable-text" class="header-left1" onclick="showServices()">Services </h4>
+					<h4 id="clickable-text" class="header-left2" onclick="document.location='about.html'">About</h4>
+				</div>
+			</div>
+			<div id="right-header">
+				<h4 id="number">&nbsp;&nbsp; (919) 464-3300</h4>
+				<div id="button-container">
+					<input class="button1" type="button"  onclick="document.location='contact.html'" value="Get a Free Estimate">
+				</div>
+			</div>
+			<img id=right-header-menu src="../images/menu.png" alt="Menu">
+		</div>
+		<div id="services-dropdown">
+			<img id=service-icons src="../images/cloth.png" alt="Cloth">
+			<img id=service-icons src="../images/broom.png" alt="Broom">
+			<h4 class=dropdown-text onclick="document.location='residential.html'">Residential Cleaning </h4>
+			<h4 class=dropdown-text onclick="document.location='commercial.html'">Commercial Cleaning </h4>
+		</div>
+	</div>
+	<div class="quiz">
+		<div id="quiz-container">
+			<h1 id="quiz-title">M & D Quote Quiz</h1>
+			<div id ="page-zero">
+				<h2 style="text-align:center;">Contact Information</h1>
+				<h3>Name/Company Name:</h2>
+				<textarea id="quiz-contact1" name="quiz-name"></textarea>
+				<h3>Phone Number</h2>
+				<textarea id="quiz-contact2" name="quiz-number"></textarea>
+				<h3>Email</h2>
+				<textarea id="quiz-contact3" name="quiz-email"></textarea>
+				<div id="contact-info-buttons">
+					<div id="quiz-prev"><input class="button6" type="button" value="Prev"></div>
+					<div id="quiz-next"><input class="button1" type="button" onclick="page(1)" value="Next"></div>
+				</div>
+			</div>
+
+			<div id= page-one>
+				<h2 id="page-one-top">Service Type</h2>
+				<div id="service-type-buttons">
+					<div id="service-type-box1" onclick="quiz(1,1)">
+						<img id="service-type-img"src="../images/home.png">
+						<h3 onclick="">Residential</h3>
+					</div>
+					<div id="service-type-box2" onclick="quiz(1,2)">
+						<img id="service-type-img"src="../images/business.png">
+						<h3 >Commercial</h3>
+					</div>
+				</div>
+				<div id="contact-info-buttons">
+					<div id="quiz-prev"><input class="button1" type="button" onclick="page(0)"value="Prev"></div>
+					<div id="quiz-next"><input class="button1" type="button" onclick="page(2)" value="Next"></div>
+				</div>
+				
+			</div>
+
+			<div id="page-two">
+				<h2 style="text-align:center;">Service Term</h2>
+				<div id="service-term-buttons">
+					<div id="service-term1">
+						<img id="service-term-img"src="../images/sun.png">
+						<h3>One Time</h3>
+					</div>
+					<div id="service-term2">
+						<img id="service-term-img"src="../images/moon.png">
+						<h3>Weekly</h3>
+					</div>
+					<div id="service-term3">
+						<img id="service-term-img"src="../images/sun.png">
+						<h3>Bi-Weekly</h3>
+					</div>
+					<div id="service-term4">
+						<img id="service-term-img"src="../images/moon.png">
+						<h3>Monthly</h3>
+					</div>
+				</div>
+				<div id="contact-info-buttons">
+					<div id="quiz-prev"><input class="button1" type="button"  onclick="page(1)" value="Prev"></div>
+					<div id="quiz-next"><input class="button1" type="button"  onclick="page(3)" value="Next"></div>
+				</div>
+			</div>
+
+			<div id="page-three">
+				<h2 style="text-align:center;">Special Requests</h2>
+				<div id="service-request"><textarea id="quiz-request" name="request"></textarea></div>
+				<div id="contact-info-buttons">
+					<div id="quiz-prev"><input class="button1" type="button"  onclick="page(2)" value="Prev"></div>
+					<div id="quiz-submit"><input class="button1" type="button" onclick="page(4)"value="Submit"></div>
+				</div>
+			</div>
+
+			<div id="page-four">
+				<h1>Thank you for taking our quiz!</h1>
+				<h2>We will get back to you ASAP</h2>
+			</div>
+		</div>
+	</div>
+	
+
+
+
+
+	<div class="footer">
+		<div class="footer-sub">
+			<div>
+				<h1 id="footer-title">M & D Cleaning</h1>
+				<div class="footer-address">
+					<div id="footer-address-images">
+						<img class="location-image" src="../images/location.png" alt="Location">
+						<img class="phone-image" src="../images/phone.png" alt="Phone">
+						<img class="email-image" src="../images/message.png" alt="Email">
+					</div>
+					<div id="footer-address-texts">
+						<h3 id="location-text">Willow Spring, North Carolina</h3>
+						<h3 id="phone-text">(919) 464-3300</h3>
+						<h3 id="email-text">m.d.cleanerservices@gmail.com</h3>
+					</div>
+				</div>
+				<div class="social-media">
+					<img onclick="location.href='https://www.facebook.com/';" class="footer-image" src="../images/facebook.png" alt="Facebook">
+					<img onclick="location.href='https://www.instagram.com/';" class="footer-image" src="../images/instagram.png" alt="Instagram">
+					<img onclick="location.href='https://www.google.com/';" class="footer-image" src="../images/google.png" alt="Google Plus">
+					<img onclick="location.href='https://www.twitter.com/';" class="footer-image" src="../images/twitter.png" alt="Twitter">
+			</div>
+			</div>
+			<div class="footer-top">
+				<div class="footer-services">
+					<h2 class="footer-heading"><br>Services</h2>
+					<h3 onclick="document.location='contact.html'" class="footer-topics">Free Consultation</h3>
+					<h3 onclick="document.location='residential.html'" class="footer-topics">Residential Cleaning</h3>
+					<h3 onclick="document.location='commercial.html'" class="footer-topics">Commercial Cleaning</h3>
+				</div>
+				<div class="footer-about">
+					<h2 class="footer-heading"><br>About</h2>
+					<h3 onclick="document.location='about.html'" class="footer-topics">About Us</h3>
+					<h3 onclick="document.location='about.html'" class="footer-topics">Our Crew</h3>
+					<h3 onclick="document.location='careers.html'" class="footer-topics">Careers</h3>
+				</div>
+				<div class="footer-contact">
+					<h2 class="footer-heading"><br>Contact</h2>
+					<h3 onclick="document.location='contact.html'" class="footer-topics">Contact Us</h3>
+					<h3 onclick="document.location='careers.html'" class="footer-topics">Crew Positions</h3>
+				</div>
+				<div class="footer-info">
+					<h2 class="footer-heading"><br>Info</h2>
+					<h3 onclick="document.location='faq.html'" class="footer-topics">FAQ's</h3>
+					<h3 onclick="document.location='quiz.html'" class="footer-topics">Quote Quiz</h3>
+				</div>
+			</div>
+	</div>
+	<div class="footer-credits">
+		<h4 class="credits">Copyrights © 2021 All Rights Reserved, M&DCleaning. Web Design by Carrima Hewitt</h3>
+	</div>
+
+	
+	<script src="../script.js"></script>
+</body>
+</html>

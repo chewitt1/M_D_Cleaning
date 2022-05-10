@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>M & D Cleaning</title>
+	<link rel="stylesheet" href="../styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="page-top">
+		<div class = "main-header">
+			<div id="left-header">
+				<h2  id="clickable-title" onclick="document.location='../index.html'">M & D Cleaning</h1>
+				<div id="sub-left-header">
+					<h4 id="clickable-text" class="header-left1" onclick="showServices()">Services </h4>
+					<h4 id="clickable-text" class="header-left2" onclick="document.location='about.html'">About</h4>
+				</div>
+			</div>
+			<div id="right-header">
+				<h4 id="number">&nbsp;&nbsp; (919) 464-3300</h4>
+				<div id="button-container">
+					<input class="button1" type="button"  onclick="document.location='contact.html'" value="Get a Free Estimate">
+				</div>
+			</div>
+			<img id=right-header-menu src="../images/menu.png" alt="Menu">
+		</div>
+		<div id="services-dropdown">
+			<img id=service-icons src="../images/cloth.png" alt="Cloth">
+			<img id=service-icons src="../images/broom.png" alt="Broom">
+			<h4 class=dropdown-text onclick="document.location='residential.html'">Residential Cleaning </h4>
+			<h4 class=dropdown-text onclick="document.location='commercial.html'">Commercial Cleaning </h4>
+		</div>
+	</div>
+	<div class="contact-form">
+		<div class="contact-image-container">
+			<div class="cropper">
+				<img class="contact-image" src="../images/con2.jpg" alt="Contact">
+			</div>
+		</div>
+		<div class="contact-info">
+			<h1 class="home-services-head">Contact Us</h1>
+			<div class="contact-text">
+				<div>
+					<form class="contact-grid" action="mail.php" method="post">
+						<label class="fname">
+							<h3>Full Name</h3>
+			      		  	<input type="text" id="Name" name="name"/>
+						</label><br>
+						<label class="form-label" for="email">
+			      		  	<h3>Email</h3>
+							<input type="email" id="Email" name="email"/>
+			    		</label><br>
+			    		<label class="form-label" for="message">
+			    			<h3>Message</h3>
+							<input type="text" id="Message" name="message"/>
+			    		</label>
+				    		<div class="contact-button">
+								<input class="button5" type="submit" value="Contact Us">
+							</div>
+					</form>				
+				</div>
+				<div id="contact-text-words">
+					<h2 class="contact-topics">Contact</h2>
+					<h4 class="contact-sub-topics">m.d.cleanerservices@gmail.com <br> (919) 464-3300</h4>
+					<h2 class="contact-topics"><br>Address</h2>
+					<h4 class="contact-sub-topics">Willow Spring, <br>North Carolina</h4>
+					<div class="contact-social-media">
+						<img onclick="location.href='https://www.facebook.com/';" class="footer-image" src="../images/facebook.png" alt="Facebook">
+						<img onclick="location.href='https://www.instagram.com/';" class="footer-image" src="../images/instagram.png" alt="Instagram">
+						<img onclick="location.href='https://www.google.com/';" class="footer-image" src="../images/google.png" alt="Google Plus">
+						<img onclick="location.href='https://www.twitter.com/';" class="footer-image" src="../images/twitter.png" alt="Twitter">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<hr id="footer-partition">
+	<div class="footer">
+		<div class="footer-sub">
+			<div>
+				<h1 id="footer-title">M & D Cleaning</h1>
+				<div class="footer-address">
+					<div id="footer-address-images">
+						<img class="location-image" src="../images/location.png" alt="Location">
+						<img class="phone-image" src="../images/phone.png" alt="Phone">
+						<img class="email-image" src="../images/message.png" alt="Email">
+					</div>
+					<div id="footer-address-texts">
+						<h3 id="location-text">Willow Spring, North Carolina</h3>
+						<h3 id="phone-text">(919) 464-3300</h3>
+						<h3 id="email-text">m.d.cleanerservices@gmail.com</h3>
+					</div>
+				</div>
+				<div class="social-media">
+					<img onclick="location.href='https://www.facebook.com/';" class="footer-image" src="../images/facebook.png" alt="Facebook">
+					<img onclick="location.href='https://www.instagram.com/';" class="footer-image" src="../images/instagram.png" alt="Instagram">
+					<img onclick="location.href='https://www.google.com/';" class="footer-image" src="../images/google.png" alt="Google Plus">
+					<img onclick="location.href='https://www.twitter.com/';" class="footer-image" src="../images/twitter.png" alt="Twitter">
+			</div>
+			</div>
+			<div class="footer-top">
+				<div class="footer-services">
+					<h2 class="footer-heading"><br>Services</h2>
+					<h3 onclick="document.location='contact.html'" class="footer-topics">Free Consultation</h3>
+					<h3 onclick="document.location='residential.html'" class="footer-topics">Residential Cleaning</h3>
+					<h3 onclick="document.location='commercial.html'" class="footer-topics">Commercial Cleaning</h3>
+				</div>
+				<div class="footer-about">
+					<h2 class="footer-heading"><br>About</h2>
+					<h3 onclick="document.location='about.html'" class="footer-topics">About Us</h3>
+					<h3 onclick="document.location='about.html'" class="footer-topics">Our Crew</h3>
+					<h3 onclick="document.location='careers.html'" class="footer-topics">Careers</h3>
+				</div>
+				<div class="footer-contact">
+					<h2 class="footer-heading"><br>Contact</h2>
+					<h3 onclick="document.location='contact.html'" class="footer-topics">Contact Us</h3>
+					<h3 onclick="document.location='careers.html'" class="footer-topics">Crew Positions</h3>
+				</div>
+				<div class="footer-info">
+					<h2 class="footer-heading"><br>Info</h2>
+					<h3 onclick="document.location='faq.html'" class="footer-topics">FAQ's</h3>
+					<h3 onclick="document.location='quiz.html'" class="footer-topics">Quote Quiz</h3>
+				</div>
+			</div>
+	</div>
+	<div class="footer-credits">
+		<h4 class="credits">Copyrights © 2021 All Rights Reserved, M&DCleaning. Web Design by Carrima Hewitt</h3>
+	</div>
+
+
+	
+	<script src="../script.js"></script>
+</body>
+</html>
