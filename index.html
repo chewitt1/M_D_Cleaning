@@ -4,167 +4,30 @@
 	<meta charset="utf-8">
 	<title>M & D Cleaning</title>
 	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="./theme.css">
 	<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
-	<div class="page-top">
-		<div class = "main-header">
-			<div id="left-header">
-				<h2  id="clickable-title" onclick="document.location='index.html'">M & D Cleaning</h1>
-				<div id="sub-left-header">
-					<h4 id="clickable-text" class="header-left1" onclick="showServices()">Services </h4>
-					<h4 id="clickable-text" class="header-left2" onclick="document.location='pages/about.html'">About</h4>
-				</div>
-			</div>
-			<div id="right-header">
-				<h4 id="number">&nbsp;&nbsp; (919) 464-3300</h4>
-				<div id="button-container">
-					<input class="button1" type="button"  onclick="document.location='pages/contact.html'" value="Get a Free Estimate">
-				</div>
-			</div>
-			<img id=right-header-menu src="images/menu.png" alt="Menu">
+	<header>
+		<div class="header-left">
+			<h2 class="title">M & D Cleaning</h2>
+			<h4 class="services">Services <span class="material-symbols-outlined">expand_more</span></h4>
 		</div>
-		<div id="services-dropdown">
-			<img id=service-icons src="images/cloth.png" alt="Cloth">
-			<img id=service-icons src="images/broom.png" alt="Broom">
-			<h4 class=dropdown-text onclick="document.location='pages/residential.html'">Residential Cleaning </h4>
-			<h4 class=dropdown-text onclick="document.location='pages/commercial.html'">Commercial Cleaning </h4>
+		<div class="header-right">
+			<h4>(919) 464-3300</h4>
+			<button>Get a Free Estimate</button>
+		</div>
+	</header>
+	<div class="services-dropdown">
+		<div class="service">
+			<img class=service-icon src="images/cloth.png" alt="Cloth">
+			<h4 class=service-text onclick="document.location='pages/residential.html'">Residential Cleaning </h4>
+		</div>
+		<div class="service">
+			<img class=service-icon src="images/broom.png" alt="Broom">
+			<h4 class=service-text onclick="document.location='pages/commercial.html'">Commercial Cleaning </h4>
 		</div>
 	</div>
-	<div class="greeting">
-		<h1>Leave the dirty work to us™</h1>
-		<h3>Trust us to clean your home or your business.</h3>
-		<input class="button2" id="quiz-button" type="button"  onclick="document.location='pages/quiz.html'" value="Take Our Quote Quiz">
-		<h6>Take the quiz for a call back about your request</h6>
-	</div>
-	<div class="residential">
-		<div id="res-image-container">
-			<img id="res-image" src="images/supplies.jpg">
-		</div>
-		<div id="res-text">
-			<div id="res-text-container">
-				<h1 id="clickable-text" class="section-title" onclick="document.location='pages/residential.html'">R E S I D E N T I A L <br>C L E A N I N G</h1>
-				<h4>Leave the job of cleaning the rooms in your house to us.</h4>
-				<h4>Our team will leave your house looking like the home it was always meant to be.</h4>
-				<div id="res-info">
-					<div>
-						<h3 id="res-list-head">We Clean</h3>
-						<ul id="res-list">
-						  <li>Bedrooms</li>
-						  <li>Bathrooms</li>
-						  <li>Kitchens</li>
-						  <li>Common Areas</li>
-						</ul>
-					</div>
-					<div>
-						<h3 id="res-list-head">Services</h3>
-						<ul id="res-list">
-						  <li>One Time Clean</li>
-						  <li>Weekly Clean</li>
-						  <li>Bi-Weekly Clean</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="commercial">
-		<div id="com-text">
-			<div id="com-text-container">
-				<div id="com-top">
-					<h1 id="clickable-text" class="section-title" onclick="document.location='pages/commercial.html'">C O M M E R C I A L <br>C L E A N I N G</h1>
-					<h4>Trust us to have your place of business looking spick and span in no time.</h4>
-					<h4>Your place of business will boast a welcoming atsmosphere to be enjoyed by the staff and visitors alike.</h4>
-				</div>
-				<div id="com-info">
-					<div>
-						<h3 id="com-list-head">We Clean</h3>
-						<ul dir="rtl" id="com-list">
-						  <li>Offices</li>
-						  <li>Apartment Complexes</li>
-						  <li>Duplexes, Triplexes</li>
-						  <li>Other Business</li>
-						</ul>
-					</div>
-					<div>
-						<h3 id="com-list-head">Services</h3>
-						<ul dir="rtl" id="com-list">
-						  <li>One Time Clean</li>
-						  <li>Weekly Clean</li>
-						  <li>Bi-Weekly Clean</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="com-image-container">
-			<img id="com-image" src="images/carpet.jpg">
-		</div>
-	</div>
-	<div class="team">
-		<div id="team-image-container">
-			<img id="team-image" src="images/hand.jpg">
-		</div>
-		<div id="team-text">
-			<h1 id="team-title">MEET THE TEAM</h1>
-			<h3 id="team-text-sub">Meet our CEO and the other members of our dedicated team</h3>
-			<input class="button2" id="quiz-button" type="button"  onclick="document.location='pages/about.html'" value="Meet the Crew">
-			<br><br>
-			<input class="button1" id="quiz-button" type="button"  onclick="document.location='pages/careers.html'" value="Careers">
-		</div>
-	</div>
-	<div class="footer">
-		<div class="footer-sub">
-			<div>
-				<h1 id="footer-title">M & D Cleaning</h1>
-				<div class="footer-address">
-					<div id="footer-address-images">
-						<img class="location-image" src="images/location.png" alt="Location">
-						<img class="phone-image" src="images/phone.png" alt="Phone">
-						<img class="email-image" src="images/message.png" alt="Email">
-					</div>
-					<div id="footer-address-texts">
-						<h3 id="location-text">Willow Spring, North Carolina</h3>
-						<h3 id="phone-text">(919) 464-3300</h3>
-						<h3 id="email-text">m.d.cleanerservices@gmail.com</h3>
-					</div>
-				</div>
-				<div class="social-media">
-					<img onclick="location.href='https://www.facebook.com/';" class="footer-image" src="images/facebook.png" alt="Facebook">
-					<img onclick="location.href='https://www.instagram.com/';" class="footer-image" src="images/instagram.png" alt="Instagram">
-					<img onclick="location.href='https://www.google.com/';" class="footer-image" src="images/google.png" alt="Google Plus">
-					<img onclick="location.href='https://www.twitter.com/';" class="footer-image" src="images/twitter.png" alt="Twitter">
-			</div>
-			</div>
-			<div class="footer-top">
-				<div class="footer-services">
-					<h2 class="footer-heading"><br>Services</h2>
-					<h3 onclick="document.location='pages/contact.html'" class="footer-topics">Free Consultation</h3>
-					<h3 onclick="document.location='pages/residential.html'" class="footer-topics">Residential Cleaning</h3>
-					<h3 onclick="document.location='pages/commercial.html'" class="footer-topics">Commercial Cleaning</h3>
-				</div>
-				<div class="footer-about">
-					<h2 class="footer-heading"><br>About</h2>
-					<h3 onclick="document.location='pages/about.html'" class="footer-topics">About Us</h3>
-					<h3 onclick="document.location='pages/about.html'" class="footer-topics">Our Crew</h3>
-					<h3 onclick="document.location='pages/careers.html'" class="footer-topics">Careers</h3>
-				</div>
-				<div class="footer-contact">
-					<h2 class="footer-heading"><br>Contact</h2>
-					<h3 onclick="document.location='pages/contact.html'" class="footer-topics">Contact Us</h3>
-					<h3 onclick="document.location='pages/careers.html'" class="footer-topics">Crew Positions</h3>
-				</div>
-				<div class="footer-info">
-					<h2 class="footer-heading"><br>Info</h2>
-					<h3 onclick="document.location='pages/faq.html'" class="footer-topics">FAQ's</h3>
-					<h3 onclick="document.location='pages/quiz.html'" class="footer-topics">Quote Quiz</h3>
-				</div>
-			</div>
-	</div>
-	<div class="footer-credits">
-		<h4 class="credits">Copyrights © 2021 All Rights Reserved, M&DCleaning. Web Design by Carrima Hewitt</h3>
-	</div>
-	
-	<script src="script.js"></script>
 </body>
 </html>
