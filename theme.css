@@ -6,10 +6,6 @@
     font-family: 'Gowun Dodum', sans-serif;
 }
 
-body{
-    background-color: rgb(162, 186, 186);
-}
-
 /*HEADER*/
 header{
     display: flex;
@@ -22,6 +18,7 @@ header{
     position: fixed;
     top: 0;
 }
+
 .header-left, .header-right{
     display: flex;
     align-items: center;
@@ -102,6 +99,8 @@ header h2:hover, h4:hover, .service:hover{
     height: 3px;
     background-color: black;
     border-radius: 20px;
+    transition-property: transform;
+    transition-duration: 0.5s;
 }
 
 
