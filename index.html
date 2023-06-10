@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>M & D Cleaning</title>
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="./index.css">
 	<link rel="stylesheet" href="./theme.css">
 	<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -13,11 +15,16 @@
 	<header>
 		<div class="header-left">
 			<h2 class="title">M & D Cleaning</h2>
-			<h4 class="services">Services <span class="material-symbols-outlined services-icon">expand_more</span></h4>
+			<h4 class="services header-lg">Services <span class="material-symbols-outlined services-icon">expand_more</span></h4>
 		</div>
 		<div class="header-right">
-			<h4>(919) 464-3300</h4>
-			<button onclick="document.location='pages/contact.html'">Get a Free Estimate</button>
+			<h4 class="header-lg">(919) 464-3300</h4>
+			<button class="header-lg" onclick="document.location='pages/contact.html'">Get a Free Estimate</button>
+			<div class="menu header-sm">
+				<div class="menu-top"></div>
+				<div class="menu-center"></div>
+				<div class="menu-bottom"></div>
+			</div>
 		</div>
 	</header>
 	<div class="services-dropdown">
@@ -32,9 +39,9 @@
 	</div>
 	<main>
 		<div class="greeting">
-			<h1>Leave the dirty work to us™</h1>
+			<h1>Leave the dirty work to us!</h1>
 			<h3>Trust us to clean your home or your business.</h3>
-			<input class="button2" id="quiz-button" type="button"  onclick="document.location='pages/quiz.html'" value="Take Our Quote Quiz">
+			<button  onclick="document.location='pages/quiz.html'">Take Our Quote Quiz</button>
 			<h6>Take the quiz for a call back about your request</h6>
 		</div>
 	</main>

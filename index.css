@@ -1,0 +1,33 @@
+.greeting{
+    background-image: url("images/mirror.jpg");
+	background-size: cover;
+    color: #379e97;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5vh;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 600px){
+    .greeting{
+        text-align: center;
+        background-position: center;
+        align-items: center;
+    }
+    .greeting button{
+        width: 40vw;
+    }
+    
+}
+
+@media screen and (min-width: 600px){
+    .greeting{
+        text-align: left;
+        padding: 10vh;
+    }
+    .greeting button{
+        width: 20vw;
+    }
+}
