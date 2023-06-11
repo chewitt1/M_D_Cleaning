@@ -2,10 +2,24 @@
     height: 100vh;
     background-image: url("./images/mirror.jpg");
 	background-size: cover;
+    background-position: top;
 	text-align: left;
-    padding: 20vh 10vh;
+    padding: 10vh;
+    padding-top: 40vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
 }
 
 .welcome h1{
     color: #379e97;
+}
+
+.welcome button{
+    padding: 3% 5%;
+    width: 200px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 15px;
 }

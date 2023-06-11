@@ -17,6 +17,9 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 0 3vw;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .logo{
