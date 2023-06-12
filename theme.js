@@ -33,8 +33,6 @@ function toggleDrawer(){
 
 menu.addEventListener("click", toggleDrawer);
 
-
-
 window.onscroll = function() {
     if(menuCollapse){
         toggleDrawer();
