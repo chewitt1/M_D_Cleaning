@@ -1,10 +1,13 @@
-/*<<<--- MENU --->>>*/
+/*<<<--- MENU  + DRAWER--->>>*/
 let menu = document.querySelector(".menu");
 let menuTop = document.querySelector(".menu-top");
 let menuCenter = document.querySelector(".menu-center");
 let menuBottom = document.querySelector(".menu-bottom");
 
 let menuSelected = false;
+
+let drawer = document.querySelector(".drawer");
+let drawerItems = document.querySelectorAll(".drawer-item");
 
 function setMenuColor(){
     if(!menuSelected){
@@ -43,4 +46,23 @@ menu.addEventListener("click", ()=>{
         menuBottom.style.transform = "rotate(0) translate(0)";
     }
     
+});
+
+function getGifName(src){
+    return "." + (src.split(".")[1]) + ".gif";
+}
+
+drawerItems.forEach(function (item) {
+    let drawerImg = item.children[0];
+    let imgSrc = drawerImg.getAttribute("src");
+    let drawerTxt = item.children[1];
+    item.addEventListener("mouseenter", () => {
+        drawerImg.setAttribute("src", getGifName(imgSrc));
+        drawerTxt.style.color = "#379e97";
+    });
+    item.addEventListener("mouseleave", () => {
+        let drawerImg = item.children[0];
+        drawerImg.setAttribute("src", imgSrc);
+        drawerTxt.style.color = "black";
+    });
 });

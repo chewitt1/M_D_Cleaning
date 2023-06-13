@@ -49,3 +49,27 @@ header{
     border-radius: 10px;
     transition: transform 0.5s;
 }
+
+/*DRAWER*/
+.drawer{
+    background-color: white;
+}
+
+.drawer-row{
+    display: flex;
+    gap: 1vh;
+}
+.drawer-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+}
+.drawer-icon{
+    height: 48px;
+    width: 48px;
+}
+
+.drawer-item:hover{
+    cursor: pointer;
+}
