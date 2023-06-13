@@ -1,89 +1,46 @@
-let menuCollapse = false;
-let menuLgCollapse = false;
-const menu = document.querySelector(".menu");
-const menuLg = document.querySelector(".menu-lg");
-let drawer = document.querySelector(".drawer");
+/*<<<--- MENU --->>>*/
+let menu = document.querySelector(".menu");
+let menuTop = document.querySelector(".menu-top");
+let menuCenter = document.querySelector(".menu-center");
+let menuBottom = document.querySelector(".menu-bottom");
 
-function toggleDrawer(){
-    const top = document.querySelector(".menu-top");
-    const center = document.querySelector(".menu-center");
-    const bottom = document.querySelector(".menu-bottom");
+let menuSelected = false;
 
-    if(!menuCollapse){
-        center.style.transform = "translate(10vw)";
-        center.style.backgroundColor = "#379e97";
-        top.style.transform = "rotate(-135deg) translate(-0.5vh, -0.5vh)";
-        top.style.backgroundColor = "#379e97";
-        bottom.style.transform = "rotate(135deg) translate(-1vh, 0.5vh)";
-        bottom.style.backgroundColor = "#379e97";
-        drawer.style.transform = "translate(200vw)";
-        menuCollapse = true;
+function setMenuColor(){
+    if(!menuSelected){
+        menuTop.style.backgroundColor = "black";
+        menuCenter.style.backgroundColor = "black";
+        menuBottom.style.backgroundColor = "black";
     }
     else{
-        top.style.transform = "rotate(0)";
-        top.style.backgroundColor = "black";
-        bottom.style.transform = "rotate(0)";
-        bottom.style.backgroundColor = "black";
-        center.style.transform = "translate(0)";
-        center.style.backgroundColor = "black";
-        menu.style.backgroundColor = "transparent";
-        drawer.style.transform = "translate(0)";
-        menuCollapse = false;
+        menuTop.style.backgroundColor = "#379e97";
+        menuCenter.style.backgroundColor = "#379e97";
+        menuBottom.style.backgroundColor = "#379e97";
     }
 }
 
-function toggleDrawerLg(){
-    const top = document.querySelector(".menu-top-lg");
-    const center = document.querySelector(".menu-center-lg");
-    const bottom = document.querySelector(".menu-bottom-lg");
+menu.addEventListener("mouseenter", ()=>{
+    menuTop.style.backgroundColor = "#379e97";
+    menuCenter.style.backgroundColor = "#379e97";
+    menuBottom.style.backgroundColor = "#379e97";
+});
 
-    if(!menuLgCollapse){
-        center.style.transform = "translate(-10vw)";
-        center.style.backgroundColor = "#379e97";
-        top.style.transform = "rotate(-135deg) translate(-0.5vh, -0.5vh)";
-        top.style.backgroundColor = "#379e97";
-        bottom.style.transform = "rotate(135deg) translate(-1vh, 0.5vh)";
-        bottom.style.backgroundColor = "#379e97";
-        drawer.style.transform = "translate(200vw)";
-        menuLgCollapse = true;
+menu.addEventListener("mouseleave", setMenuColor);
+
+menu.addEventListener("click", ()=>{
+    if(!menuSelected){
+        menuSelected = true;
+        setMenuColor();
+        menuTop.style.transform = "rotate(45deg) translate(0, 8px)";
+        menuCenter.style.transform = "translate(100px)";
+        menuBottom.style.transform = "rotate(-45deg) translate(0, -8px)";
     }
     else{
-        top.style.transform = "rotate(0)";
-        top.style.backgroundColor = "black";
-        bottom.style.transform = "rotate(0)";
-        bottom.style.backgroundColor = "black";
-        center.style.transform = "translate(0)";
-        center.style.backgroundColor = "black";
-        menu.style.backgroundColor = "transparent";
-        drawer.style.transform = "translate(0)";
-        menuLgCollapse = false;
+        menuSelected = false;
+        setMenuColor();
+        menuTop.style.transform = "rotate(0) translate(0)";
+        menuCenter.style.transform = "translate(0)";
+        menuBottom.style.transform = "rotate(0) translate(0)";
     }
-}
-
-menu.addEventListener("click", toggleDrawer);
-menuLg.addEventListener("click", toggleDrawerLg);
-menuLg.addEventListener("mouseenter", () => {
-    const top = document.querySelector(".menu-top-lg");
-    const center = document.querySelector(".menu-center-lg");
-    const bottom = document.querySelector(".menu-bottom-lg");
-    top.style.backgroundColor = "#379e97";
-    center.style.backgroundColor = "#379e97";
-    bottom.style.backgroundColor = "#379e97";
+    
 });
-menuLg.addEventListener("mouseleave", () => {
-    const top = document.querySelector(".menu-top-lg");
-    const center = document.querySelector(".menu-center-lg");
-    const bottom = document.querySelector(".menu-bottom-lg");
-    top.style.backgroundColor = "black";
-    center.style.backgroundColor = "black";
-    bottom.style.backgroundColor = "black";
-});
-
-window.onscroll = function() {
-    if(menuCollapse){
-        toggleDrawer();
-    }
-    if(menuLgCollapse){
-        toggleDrawerLg();
-    }
-}

@@ -5,221 +5,47 @@
     font-family: 'Gowun Dodum', sans-serif;
 }
 
+body{
+    background-color: rgb(200, 216, 222);
+}
+
+
+/*<<<--- HEADER --->>>*/
 header{
-    height: 13.4vh;
-    background-color: white;
-    box-shadow: 0 4px 6px 0 rgba(34, 60, 80, .16);
     display: flex;
-    align-items: center;
     justify-content: space-between;
     padding: 0 3vw;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-.header-left, .header-right{
-    display: flex;
+    background-color: white;
     align-items: center;
-    gap: 4vw;
+    height: 13.4vh;
+    box-shadow: 0 4px 6px 0 rgba(34, 60, 80, .16);
+    overflow: hidden;
 }
 
-.header-services{
-    display: flex;
-    align-items: center;
-}
-
+/*LOGO*/
 .logo{
     color: #379e97;
 }
 
-.menu{
-    width: 24px;
-    height: 24px;
-    margin: 0;
-}
+/*MENU*/
 
-.menu-lg{
-    width: 36px;
-    height: 36px;
+.menu{
+    height: 24px;
+    width: 24px;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 6px;
+    gap: 3px;
 }
 
-.menu-lg:hover{
+.menu:hover{
     cursor: pointer;
 }
 
-.menu > *{
-    background-color: #232322;
+.menu-top, .menu-center, .menu-bottom{
+    height: 3px;
     width: 100%;
-    height: 2.8px;
-    border-radius: 3px;
-    transition-property: transform;
-    transition-duration: 0.5s;
-}
-
-.menu-lg > *{
-    background-color: #232322;
-    width: 100%;
-    height: 2.8px;
-    border-radius: 3px;
-    transition-property: transform;
-    transition-duration: 0.5s;
-    margin-top: 5px;
-}
-
-.menu-top{
-    margin-top: 0;
-}
-
-.drawer{
-    height: 100vh;
-    width: min(50vw, 280px);
-    position: fixed;
-    top: 0;
-    left: -200vw;
-    background-color: white;
-    box-shadow: 4px 0 6px 0 rgba(34, 60, 80, .16);
-    transition: transform 0.3s;
-}
-
-.drawer-logo{
-    padding: 3vh;
-    padding-bottom: 5vh;
-}
-
-.drawer hr{
-    border: 0;
-    border-top: 1px solid #c9c9c6;
-    height: 1px;
-}
-
-.services{
-    padding-top: 3vh;
-}
-
-.service{
-    display: flex;
-    color: #2b2b29;
-    width: 100%;
-    align-items: center;
-    padding: 0 min(4vw, 20px);
-    gap: 4vw;
-    margin-bottom: 3vh;
-}
-
-.service img{
-    height: 36px;
-    width: 36px;
-}
-
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 38
-}
-
-.policy{
-    width: min(50vw, 280px);
-    text-align: center;
-    position: absolute;
-    padding: 1vh 0;
-    bottom: 0;
-    color: #575755;
-}
-
-footer{
-    padding: 4vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-footer .logo{
-    text-align: center;
-}
-
-.socials{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 5%;
-}
-
-.footer-img{
-    width: 48px;
-    height: 48px;
-    border: solid 2px;
-    border-radius: 50%;
-    padding: 5px;
-}
-
-.footer-metadata{
-    width: 100%;
-    padding: 10vh 0;
-    display: flex;
-    justify-content: center;
-    gap: 15vh;
-    align-items: center;
-    flex-wrap: wrap;
-    row-gap: 10vh;
-}
-
-.footer-info{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    gap: 15px;
-    min-width: 150px;
-}
-
-.footer-info h2{
-    color: #379e97;
-    margin-bottom: 10px;
-}
-
-@media screen
- and (max-width: 700px){
-    .menu{
-        display: block;
-    }
-    .header-lg{
-        display: none;
-    }
-}
-
-@media screen
- and (min-width: 700px){
-    .menu{
-        display: none;
-    }
-    header{
-        height: 12vh;
-    }
-    .header-lg{
-        display: flex;
-    }
-    header button{
-        width: 200px;
-        padding: 15px 10px;
-        background-color: white;
-        border-radius: 15px;
-        border: 1px solid black;
-    }
-    header button:hover{
-        cursor: pointer;
-        border: 1px solid #379e97;
-        background-color: #379e97;
-        color: white;
-    }
-
-    header h4:hover{
-        cursor: pointer;
-        color: #379e97;
-    }
-    
+    background-color: black;
+    border-radius: 10px;
+    transition: transform 0.5s;
 }
