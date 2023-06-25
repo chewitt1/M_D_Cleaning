@@ -641,7 +641,6 @@ input[type=text], input[type=email]{
 	text-align: center;
 	padding-top: 50px;
 	padding-bottom: 50px;
-	margin-left: ;
 }
 
 .contact-text{
@@ -779,34 +778,52 @@ input[type=text], input[type=email]{
 /*QUIZ*/
 .quiz{
 	text-align: center;
-	padding: 90px 100px 100px 300px;
 	background-color: #d1edeb;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 60px;
+	padding-top: 10px;
 }
+
 #quiz-container{
 	border: solid 1px #a5c4c2;
-	width: 1000px;
-	height: 650px;
+	width: 800px;
+	height: 500px;
 	border-radius: 5px;
 	text-align: center;
 	padding-top: 5px;
+	margin-top: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 #quiz-title{
 	text-align: center;
 }
 #page-zero, #page-one, #page-two, #page-three, #page-four{
-	background-color: white;
-	width: 850px; 
-  height: 470px;
-  padding: 10px 10px 30px 10px;
-  position: relative;
-  margin: 30px 50px 50px 62px;
+  background-color: white;
+  height: 100%;
+  width: 850px;
   box-shadow: 0 4px 6px 0 rgba(34, 60, 80, .16);
   border-radius: 5px;
+  position: relative;
+  left: 100px;
+}
+
+#page-four{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 100px;
 }
 #contact-info-buttons, #service-type-buttons{
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	display: flex;
 	text-align: center;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
 }
 #quiz-contact1, #quiz-contact2, #quiz-contact3{
 	resize: none;
@@ -820,8 +837,8 @@ input[type=text], input[type=email]{
 }
 #service-type-box1, #service-type-box2{
 	border: solid 2px #DFDEDC;
-	margin: 50px;
-	padding: 20px 10px 10px 10px
+	margin: 20px 0;
+	padding: 20px;
 }
 #service-type-box1{
 	margin-left: 160px;
@@ -831,7 +848,7 @@ input[type=text], input[type=email]{
 }
 /*FIXES JS INTERFERENCE !important:  
 https://stackoverflow.com/questions/14071652/css-hover-event-not-working-after-using-javascript*/
-#service-type-box1:hover, #service-type-box2:hover, #service-term1:hover, #service-term2:hover, #service-term3:hover, #service-term4: hover{ /*ADD permanent change with js*/
+#service-type-box1:hover, #service-type-box2:hover, #service-term1:hover, #service-term2:hover, #service-term3:hover, #service-term4:hover{ /*ADD permanent change with js*/
 	background-color: #82bab6 !important; 
 	border-color: #82bab6 !important;
 	color: white !important;
@@ -877,14 +894,8 @@ https://stackoverflow.com/questions/14071652/css-hover-event-not-working-after-u
 }
 
 #quiz-next, #quiz-prev, #quiz-submit{
-	margin-top: 20px;
+	margin: 10px;
 	z-index: 3;
-}
-#quiz-next, #quiz-submit{
-	margin-left: -50%;
-}
-#quiz-prev{
-	margin-right: -50%;
 }
 
 
