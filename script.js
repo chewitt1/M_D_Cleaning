@@ -106,3 +106,14 @@ function quiz(){
 		console.log(quizData);
 	}
 }
+
+let quizOptions = document.querySelectorAll(".quiz-option");
+
+quizOptions.forEach((option) => {
+	option.addEventListener("click", () =>{
+		if(document.querySelector(".quiz-selected") != null){
+			document.querySelector(".quiz-selected").classList.remove("quiz-selected");
+		}
+		option.classList.add("quiz-selected")
+	});
+});

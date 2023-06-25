@@ -1094,3 +1094,8 @@ https://stackoverflow.com/questions/14071652/css-hover-event-not-working-after-u
  	}
  	
 }
+
+/*NEW QUIZ CSS*/
+.quiz-selected{
+	background-color: #82bab6;
+}
